@@ -30,5 +30,6 @@ class Api::CartsController < ApplicationController
         products: cart.products
       }
     }, status: status
+    
   end
 end

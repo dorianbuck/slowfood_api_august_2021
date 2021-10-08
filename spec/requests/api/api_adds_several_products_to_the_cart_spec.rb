@@ -15,7 +15,7 @@ RSpec.describe 'PUT /api/carts', type: :request do
           headers: auth_headers
     end
 
-    it { is_expected.to have_http_status 200 }
+    it { binding.pry; is_expected.to have_http_status 200 }
 
     it 'is expected to return an array of items' do
       expect(response_json['cart']['products'].count).to eq 2
